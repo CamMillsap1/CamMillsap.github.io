@@ -11,12 +11,44 @@
   <head>
     <meta charset="utf-8">
     <title> Cameron's Portfolio</title>
+    <link rel="stylesheet" href = "css/styles.css">
   </head>
   <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class="active" href="portfolio.html">Portfolio</a>
+    </div>
     <h1 class="aligncenter">Portfolio</h1>
-    <h2 class="aligncenter">Sprites</h2>
-    <p class="aligncenter">
-      <img src= "Images/Fire Sprites/Fire1.png" width="200">  <img src= "Images/Fire Sprites/Fire2.png" width="200"><br>
-      <img src= "Images/Fire Sprites/Fire3.png" width="200">  <img src= "Images/Fire Sprites/Fire4.png" width="200">
+    <h2>Sprites</h2>
+
+<img class="myImg" src="Images/Fire Sprites/Fire1.png" alt="Campfire">
+<img class="myImg" src="Images/Fire Sprites/Fire2.png" alt="Fire Bolt">
+<img class="myImg" src="Images/Fire Sprites/Fire3.png" alt="Hand Holding Fire">
+<img class="myImg" src="Images/Fire Sprites/Fire4.png" alt="Flame">
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.displayname='none'">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+<script>
+var modal = document.getElementById('myModal');
+var img = $('.myImg');
+var modalImg = $('#img01');
+var captiontext = document.getElementById("caption");
+$('.myImg').click(function(){
+  modal.style.display = "block";
+  var newSrc = this.src;
+  modalImg.attr('src', newSrc);
+  captionText.innerHTML = this.alt;
+})
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
   </body>
 </html>

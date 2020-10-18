@@ -1,110 +1,44 @@
 <!DOCTYPE html>
-<style>
-.aligncenter
-{
-  text-align: center;
-}
-.center{
-  margin-left: auto;
-  margin-right: auto;
-}
-::selection{
-  color: red;
-  background: yellow;
-}
-ol{
-  list-style-position: inside;
-}
-ul
-{ text-align: center;
-list-style-position: inside;
-}
-</style>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Cameron Millsap Personal Website</title>
     <link rel = "shortcut icon" href="Images/Pixel Me.png" type="image/x-icon">
+    <link rel = "stylesheet" href = "css/styles.css">
   </head>
   <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
     <p class ="aligncenter">
-      <img src="Images/It Me.jpg" width="200" alt="centered image" />
+      <img src="Images/It Me.jpg" width="200" alt="centered image" id = "titlephoto"/>
     </p>
+    <div class="textbox">
     <a name "top"></a>
     <h1 class="aligncenter">About Myself </h1>
     <p class="aligncenter">Hey there my name is Cameron.
     <br class="aligncenter"> Welcome to my website I hope you learn a thing or two about me!
   </p>
 
-    <hr><p class="aligncenter">Here you'll find plenty of information from art and games created by me, <br class="aligncenter">
+    <p class="aligncenter">Here you'll find plenty of information from art and games created by me, <br class="aligncenter">
     to hobbies and interests I pursue outside of programming.</p>
-    <hr><blockquote cite="https://www.lifehack.org/articles/communication/30-the-most-inspirational-quotes-all-time.html" class="aligncenter">
+    <blockquote cite="https://www.lifehack.org/articles/communication/30-the-most-inspirational-quotes-all-time.html" class="aligncenter">
       "Anyone who has ever made anything of importance was diciplined"<br>
       -Andrew Hendrixson
     </blockquote>
-
-
-    <h2 class="aligncenter"> Hobbies </h2>
-    <ol type = "1" class="aligncenter">
-      <li>Gaming</li>
-      <ul>
-        <li>Wow</li>
-        <li>League</li>
-        <li>Overwatch</li>
-      </ul>
-      <li>Volleyball</li>
-      <li>Music</li>
-      <ul>
-        <li>Edm</li>
-        <li>Hip hop </li>
-      </ul>
-    </ol>
-    <h3 class="aligncenter">Random stuff because I feel like putting it</h3>
-    <ul type = "square" class="aligncenter">
-      <li>apples</li>
-      <li>pears</li>
-      <li>oranges</li>
-    </ul>
-
+</div>
+<div class = "textbox" style = background-color:#f1f7ed;color:#243e36;>
+<p class = "aligncenter" >This div has inline css</p>
+</div>
+<div class="textbox">
     <h4 class="aligncenter">Cool Linkz :)</h4>
     <ul class="aligncenter">
-      <li> <a href = "https://www.youtube.com/watch?v=oHg5SJYRHA0&ab_channel=cotter548" target="_blank"> Definitely Not a Rick Roll</a> </li>
-      <li> <a href = "portfolio.html"> Portfolio </a></li>
       <li> <a href = "https://docs.google.com/document/d/1NORXd28IM21jryVerGsuJk3FN9MoJgSxTmsdjAy59Uk/edit?usp=sharing" download> My Resume</a>
-      <li> <a href = "https://www.facebook.com/MostFunnyVideos247/" target="_blank">
-        <img src = "Images/Face.jpg"><br>My Face when you come to my site</a></li>
       <li> <a href = "#top"> Back to top! </a></li>
     </ul>
+</div>
 
-    <table  class="center" border="1" cellpadding="2" bgcolor="#add8e6" >
-      <tr>
-        <th colspan="2"> My courses in Game Programming 2020</th>
-      </tr>
-      <tr>
-        <td><b>Course Code</b></td> <td><b>Course Name</b></td>
-      </tr>
-      <tr>
-        <td>Comm110</td><td>Communications for College</td>
-      </tr>
-      <tr>
-        <td>Game102</td><td>Programming Fundamentals</td>
-      </tr>
-      <tr>
-        <td>Game103</td><td>Introduction to Gaming</td>
-      </tr>
-      <tr>
-        <td>Game110</td><td>Computer Graphics and Modelling</td>
-      </tr>
-      <tr>
-        <td>Game111</td><td>Web Design and Database Management</td>
-      </tr>
-      <tr>
-        <td>Gene165</td><td>Introduction to Intercultural Communications</td>
-      </tr>
-      <tr>
-        <td>Math1001</td><td>Math for Game</td>
-      </tr>
-    </table>
-    <p>Ps... try highlighting something to see some funky colors</p>
   </body>
 </html>
